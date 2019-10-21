@@ -3,10 +3,12 @@
 fit-ui-dashboard-activity-chart {
     display: block;
     min-width: 540px;
+    width: 100%;
 
     .chart {
         max-height: 235px;
         height: 100%;
+        width: 100%;
     }
 
     .ct-legend {
