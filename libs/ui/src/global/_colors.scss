@@ -1,70 +1,34 @@
 $colors: (
-    'blue': (
-        base: #009cde,
+    'primary': (
+        base: #36348E,
         contrast: #ffffff
     ),
-    'dark-blue': (
-        base: #002a3a,
+    'warning': (
+        base: #FECD42,
         contrast: #ffffff
     ),
-    'medium-blue': (
-        base: #004f71,
+    'danger': (
+        base: #EE5E5D,
         contrast: #ffffff
     ),
-    'light-blue': (
-        base: #5bc2e7,
+    'success': (
+        base: #85E557,
         contrast: #ffffff
     ),
-    'mint': (
-        base: #64ccc9,
+    'green': (
+        base: #66C13D,
         contrast: #ffffff
     ),
-    'charcoal': (
-        base: #222731,
+    'cyan': (
+        base: #3DC3B6,
         contrast: #ffffff
     ),
-    'dark-gray': (
-        base: #63666a,
-        contrast: #ffffff
-    ),
-    'medium-gray': (
-        base: #888b8d,
+    'gray': (
+        base: #A2A7B1,
         contrast: #ffffff
     ),
     'light-gray': (
-        base: #d9d9d6,
-        contrast: #ffffff
-    ),
-    'purple': (
-        base: #470a68,
-        contrast: #ffffff
-    ),
-    'magenta': (
-        base: #aa0061,
-        contrast: #ffffff
-    ),
-    'red': (
-        base: #e4002b,
-        contrast: #ffffff
-    ),
-    'gold': (
-        base: #eeb33b,
-        contrast: #ffffff
-    ),
-    'yellow': (
-        base: #ffd100,
-        contrast: #ffffff
-    ),
-    'medium-yellow': (
-        base: #B39200,
-        contrast: #ffffff
-    ),
-    'medium-green': (
-        base: #00b140,
-        contrast: #ffffff
-    ),
-    'light-green': (
-        base: #7ccc6c,
+        base: #F0F0F0,
         contrast: #ffffff
     ),
     'white': (
@@ -91,7 +55,7 @@ $colors: (
 
 @each $name,
 $color in $colors {
-    $varName: --abbott-color-#{$name};
+    $varName: --app-color-#{$name};
 
     $baseColor: map-get($color, base);
     $contrastColor: map-get($color, contrast);
@@ -124,7 +88,7 @@ $color in $colors {
         }
     }
 
-    .abbott-color-#{$name} {
+    .app-color-#{$name} {
         color: var(#{$varName});
     }
 }

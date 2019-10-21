@@ -1,0 +1,16 @@
+// Trainer Card List
+// --------------------------------------------------
+fit-ui-trainer-card:not(:last-child) {
+    margin-bottom:20px;
+    position: relative;
+    &::after {
+        position: absolute;
+        bottom: 0;
+        height: 1px;
+        width: 100%;
+        display: block;
+        content: '';
+        transform: translateY(10px);
+        background-color: var(--app-color-light-gray);
+    }
+}

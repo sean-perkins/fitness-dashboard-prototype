@@ -1,0 +1,29 @@
+// Dashboard Drawer
+// --------------------------------------------------
+:host {
+    display: block;
+    width: 420px;
+    padding: 40px;
+    background: var(--color-white);
+    box-sizing: border-box;
+}
+
+.user-bar, .user-actions {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.user-actions {
+    fit-ui-icon-btn + fit-ui-icon-btn {
+        margin-left: 30px;
+    }
+}
+
+.user-details {
+    display: flex;
+    align-items: center;
+    fit-ui-avatar {
+        margin-left: 15px;
+    }
+}

@@ -1,0 +1,19 @@
+// Date Button
+// --------------------------------------------------
+:host {
+    --color: var(--app-color-primary);
+    background-color: var(--app-color-light-gray);
+    border-radius: 1em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 50px;
+    width: 180px;
+    padding: 10px;
+    box-sizing: border-box;
+    color: var(--color);
+}
+
+fit-ui-icon {
+    margin-left: 10px;
+}

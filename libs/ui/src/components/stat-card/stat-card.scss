@@ -1,0 +1,48 @@
+// Stat Card
+// --------------------------------------------------
+:host {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    min-height: 120px;
+    min-width: 270px;
+    box-shadow: rgba(18, 38, 63, 0.05) 0 0 1.5rem;
+    border-radius: 1em;
+    overflow: hidden;
+    width: 100%;
+}
+
+.inner-container {
+    margin-left: 20px;
+}
+
+.measurement, .heading {
+    display: flex;
+    align-items: center;
+}
+
+.heading fit-ui-icon, .measurement fit-ui-label:nth-child(2) {
+    margin-left: 10px;
+}
+
+.stat-column {
+    width: 70px;
+    min-height: 120px;
+    height: 100%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--app-color-light-gray);
+    .fill {
+        position: absolute;
+        width: 100%;
+        bottom: 0;
+        background: linear-gradient(225deg, var(--background-color-shade) 0%, var(--background-color) 100%);
+    }
+    fit-ui-label {
+        z-index: 2;
+        opacity: 0.5;
+    }
+}

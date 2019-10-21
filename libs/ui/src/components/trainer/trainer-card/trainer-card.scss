@@ -1,0 +1,74 @@
+// Trainer Card
+// --------------------------------------------------
+:host {
+    display: flex;
+    width: 100%;
+    min-width: 350px;
+    height: 55px;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.rating {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.social {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    &-btn {
+        width: 30px;
+        height: 30px;
+        border-radius: 999em;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        transition: all .2s ease-in;
+        cursor: pointer;
+        &.twitter {
+            background-color: #EFF7FE;
+            color: #5BAEED;
+            &:hover {
+                background-color: #5BAEED;
+                color: var(--app-color-white);
+            }
+        }
+        &.facebook {
+            background-color: #F1F7FE;
+            color: #3F5A92;
+            &:hover {
+                background-color: #3F5A92;
+                color: var(--app-color-white);
+            }
+        }
+        &:not(:first-child) {
+            margin-left: 10px;
+        }
+    }
+    &-spacer {
+        width: 30px;
+        height: 30px;
+    }
+}
+
+// Trainer Card: Active
+// --------------------------------------------------
+:host([active]) {
+    fit-ui-avatar::after {
+        content: '';
+        width: 8px;
+        height: 8px;
+        display:block;
+        position: absolute;
+        top:0;
+        right: 0;
+        border-radius: 999em;
+        background: var(--app-color-success);
+        z-index: 3;
+        transform: translate(7px, -2px);
+    }
+}

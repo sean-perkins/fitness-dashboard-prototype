@@ -1,0 +1,22 @@
+// Map HUD
+// --------------------------------------------------
+:host {
+    width: 225px;
+    height: 90px;
+    display: block;
+    border-radius: 1em;
+    background-color: rgba(167, 178, 179, 0.5);
+    padding: 15px;
+    border: 1px solid rgb(167, 178, 179);
+    box-sizing: border-box;
+}
+
+.section-title {
+    margin-bottom: 5px;
+}
+
+.content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}

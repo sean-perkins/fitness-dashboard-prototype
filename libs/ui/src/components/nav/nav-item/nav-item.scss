@@ -1,0 +1,33 @@
+// Nav Item
+// --------------------------------------------------
+:host {
+    --width: 55px;
+    --height: 55px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: var(--width);
+    height: var(--height);
+    border-radius: 1em;
+    background-color: var(--app-color-primary);
+    color: var(--app-color-white);
+    cursor: pointer;
+    transition: all .2s cubic-bezier(0.55, 0.055, 0.675, 0.19);
+}
+
+::slotted(fit-ui-icon) {
+    font-size: 1.5em;
+}
+
+// Nav Item: Active (browser style)
+// --------------------------------------------------
+:host(:active) {
+    transform: scale(0.9);
+}
+
+// Nav Item: Active
+// --------------------------------------------------
+:host([active]) {
+    background-color: var(--app-color-primary-tint);
+}

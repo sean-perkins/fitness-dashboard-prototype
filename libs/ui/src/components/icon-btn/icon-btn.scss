@@ -1,0 +1,51 @@
+// Icon Button
+// --------------------------------------------------
+:host {
+    border-radius: 1em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #F4F7FF;
+    height: 48px;
+    width: 48px;
+    transition: background-color .2s ease-in,
+        color .2s ease-in,
+        transform .2s cubic-bezier(0.55, 0.055, 0.675, 0.19);
+    color: var(--app-color-primary);
+    cursor: pointer;
+    position: relative;
+}
+
+::slotted(fit-ui-icon) {
+    font-size: 1.5em;
+}
+
+// Icon Button: Hover
+// --------------------------------------------------
+:host(:hover) {
+    background-color: var(--app-color-primary-tint);
+    color: var(--app-color-white);
+}
+
+// Icon Button: Active State
+// --------------------------------------------------
+:host(:active) {
+    transform: scale(0.9);
+}
+
+// Icon Button: Active (Notification Indicator)
+// --------------------------------------------------
+:host([active]) {
+    ::after {
+        content: '';
+        width: 8px;
+        height: 8px;
+        display:block;
+        position: absolute;
+        top:0;
+        right: 0;
+        border-radius: 999em;
+        background: var(--app-color-danger);
+        z-index: 3;
+    }
+}

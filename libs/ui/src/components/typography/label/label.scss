@@ -1,11 +1,11 @@
 
 $sizes: (
-    xxlarge: 42px,
-    xlarge: 32px,
-    large: 24px,
+    xxl: 42px,
+    xl: 32px,
+    lg: 24px,
     base: 16px,
-    small: 14px,
-    xsmall: 12px
+    sm: 14px,
+    xs: 12px
 );
 
 :host {
@@ -24,10 +24,6 @@ $sizes: (
         align-items: center;
         font-family: var(--font-family);
     }
-}
-
-:host([small]) {
-    line-height: 20px;
 }
 
 :host([capitalize]) {

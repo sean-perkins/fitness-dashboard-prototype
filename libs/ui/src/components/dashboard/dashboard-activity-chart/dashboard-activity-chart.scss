@@ -1,0 +1,56 @@
+@import '~chartist/dist/chartist.css';
+
+fit-ui-dashboard-activity-chart {
+    display: block;
+    min-width: 540px;
+
+    .chart {
+        max-height: 235px;
+        height: 100%;
+    }
+
+    .ct-legend {
+        position: relative;
+        z-index: 10;
+
+        li {
+            position: relative;
+            padding-left: 23px;
+            margin-bottom: 3px;
+        }
+
+        li:before {
+            width: 12px;
+            height: 12px;
+            position: absolute;
+            left: 0;
+            content: '';
+            border: 3px solid transparent;
+            border-radius: 2px;
+        }
+
+        li.inactive:before {
+            background: transparent;
+        }
+
+        &.ct-legend-inside {
+            position: absolute;
+            top: 0;
+            right: 0;
+        }
+
+    }
+
+    .ct-series-a .ct-bar {
+        stroke: var(--app-color-danger);
+    }
+
+    .ct-series-b .ct-bar {
+        stroke: var(--app-color-primary);
+    }
+
+    .ct-series-c .ct-bar {
+        stroke: var(--app-color-warning);
+    }
+
+}

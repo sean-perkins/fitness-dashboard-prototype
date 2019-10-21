@@ -2,7 +2,7 @@ import { Component, h, Prop } from '@stencil/core';
 import { Color } from '../../../interface';
 
 @Component({
-    tag: 'hive-ui-label',
+    tag: 'fit-ui-label',
     styleUrl: 'label.scss',
     shadow: true
 })
@@ -25,12 +25,12 @@ export class Label {
     * These exist for tsx compiler and jsx property reflection.
     * All logic is handled in css host attribute selectors.
     */
-    @Prop({ reflect: true }) xxlarge: boolean;
-    @Prop({ reflect: true }) xlarge: boolean;
-    @Prop({ reflect: true }) large: boolean;
+    @Prop({ reflect: true }) xxl: boolean;
+    @Prop({ reflect: true }) xl: boolean;
+    @Prop({ reflect: true }) lg: boolean;
     @Prop({ reflect: true }) base: boolean;
-    @Prop({ reflect: true }) small: boolean;
-    @Prop({ reflect: true }) xsmall: boolean;
+    @Prop({ reflect: true }) sm: boolean;
+    @Prop({ reflect: true }) xs: boolean;
 
     @Prop({ reflect: true }) xbold: boolean;
     @Prop({ reflect: true }) bold: boolean;
@@ -51,7 +51,7 @@ export class Label {
             style['--max-lines'] = this.maxLines;
         }
         if (this.color) {
-            style['--label-color'] = `var(--abbott-color-${this.color})`;
+            style['--label-color'] = `var(--app-color-${this.color})`;
         }
         if (this.type) {
             if (this.type === 'label') {

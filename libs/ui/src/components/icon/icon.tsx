@@ -4,7 +4,7 @@ import { getSvgContent } from './request';
 import { getName, getUrl } from './utils';
 
 @Component({
-    tag: 'hive-ui-icon',
+    tag: 'fit-ui-icon',
     assetsDir: 'icons',
     styleUrl: 'icon.css',
     shadow: true
@@ -103,7 +103,7 @@ export class Icon {
     render() {
         const style = {};
         if (this.color) {
-            style['--color'] = `var(--abbott-color-${this.color})`;
+            style['--color'] = `var(--app-color-${this.color})`;
         }
         return (
             <Host role='img'

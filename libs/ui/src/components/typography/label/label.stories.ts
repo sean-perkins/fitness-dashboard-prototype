@@ -11,33 +11,38 @@ storiesOf('Typography|Label', module)
             markdown: readme
         }
     })
-    .add('Body/Georgia/Normal/Left', () => ({
+    .add('Size/Default', () => ({
         template: `
-            <hive-ui-label>The quick brown fox jumps over the lazy dog.</hive-ui-label>
+            <fit-ui-label>The quick brown fox jumps over the lazy dog.</fit-ui-label>
         `
     }))
-    .add('Body/Georgia/small/Left', () => ({
+    .add('Size/Small', () => ({
         template: `
-            <hive-ui-label small>The quick brown fox jumps over the lazy dog.</hive-ui-label>
+            <fit-ui-label small>The quick brown fox jumps over the lazy dog.</fit-ui-label>
         `
     }))
-    .add('subtext/Georgia/right/blue', () => ({
+    .add('Color/Primary', () => ({
         template: `
-            <hive-ui-label color="blue">The quick brown fox jumps over the lazy dog.</hive-ui-label>
+            <fit-ui-label color="primary">The quick brown fox jumps over the lazy dog.</fit-ui-label>
+        `
+    }))
+    .add('Color/Danger', () => ({
+        template: `
+            <fit-ui-label color="danger">The quick brown fox jumps over the lazy dog.</fit-ui-label>
         `
     }))
     .add('Capitalize', () => ({
         template: `
-            <hive-ui-label capitalize>The quick brown fox jumps over the lazy dog.</hive-ui-label>
+            <fit-ui-label capitalize>The quick brown fox jumps over the lazy dog.</fit-ui-label>
         `
     }))
     .add('Uppercase', () => ({
         template: `
-            <hive-ui-label uppercase>The quick brown fox jumps over the lazy dog.</hive-ui-label>
+            <fit-ui-label uppercase>The quick brown fox jumps over the lazy dog.</fit-ui-label>
         `
     }))
     .add('Lowercase', () => ({
         template: `
-            <hive-ui-label lowercase>The quick brown fox jumps over the lazy dog.</hive-ui-label>
+            <fit-ui-label lowercase>The quick brown fox jumps over the lazy dog.</fit-ui-label>
         `
     }));

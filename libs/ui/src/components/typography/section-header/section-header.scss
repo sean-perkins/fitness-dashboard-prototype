@@ -1,0 +1,12 @@
+
+:host {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    margin: 20px 0;
+}
+
+::slotted(fit-ui-icon) {
+    font-size: 1.1em;
+}

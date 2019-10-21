@@ -1,0 +1,15 @@
+// Avatar
+// --------------------------------------------------
+:host {
+    --width: 50px;
+    --height: 50px;
+    min-width: var(--width);
+    min-height: var(--height);
+    width: var(--width);
+    height: var(--height);
+    border-radius: 1em;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    display: block;
+}

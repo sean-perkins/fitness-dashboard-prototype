@@ -21,7 +21,7 @@ Icons.forEach((icon: string) => {
         })
         .add('default', () => ({
             template: `
-                <hive-ui-icon name="${icon}"></hive-ui-icon>
+                <fit-ui-icon name="${icon}"></fit-ui-icon>
             `}
         ));
 });
