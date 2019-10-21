@@ -4,7 +4,7 @@
     "scripts": {
         "ng": "ng",
         "start": "ng serve",
-        "build": "ng build",
+        "build": "npm run build:ui && build-storybook -o docs",
         "build:native": "ng build native && npm run native:sync",
         "build:web:prod": "ng build --prod",
         "build:native:prod": "ng build native --prod && npm run native:sync",
@@ -30,7 +30,7 @@
         "dep-graph": "./node_modules/.bin/nx dep-graph",
         "help": "./node_modules/.bin/nx help",
         "storybook": "concurrently \"npm run start:ui\" \"start-storybook -p 9000 --ci\"",
-        "build:storybook": "build-storybook",
+        "build:storybook": "npm run build:ui && build-storybook",
         "build:ui": "cd libs/ui && stencil build",
         "start:ui": "cd libs/ui && stencil build --watch",
         "dsm-storybook:publish": "dsm-storybook publish",

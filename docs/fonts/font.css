@@ -1,0 +1,12 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800&display=swap');
+
+:root {
+    --app-font-family: 'Open Sans', sans-serif;
+    --ion-font-family: var(--app-font-family);
+}
+
+html,
+body,
+button {
+    font-family: 'Open Sans', sans-serif;
+}

@@ -22,6 +22,13 @@
 | `xxlarge`  | `xxlarge`   |                                                                                                                       | `boolean`                                                                                                              | `undefined` |
 
 
+## CSS Custom Properties
+
+| Name            | Description                |
+| --------------- | -------------------------- |
+| `--font-family` | Font family of the heading |
+
+
 ----------------------------------------------
 
 *Built with [StencilJS](https://stenciljs.com/)*
